@@ -7,7 +7,7 @@ class Professor(Pessoa):
         self._titulacao = titulacao
         self._turmas = []
 
-    def adicionar_turma(self, turma):
+    def adicionar_turma(self, turma: Turma):
         self._turmas.append(turma)
     
     def lancar_nota(self, turma: Turma, aluno, nota):
@@ -27,9 +27,6 @@ class Professor(Pessoa):
     def listar_turmas(self):
         for t in self._turmas:
             print(t)
-
-    def get_nome(self):
-        return self._nome
 
     def __str__(self):
         return f"Nome: {self._nome}, Titulação: {self._titulacao}"
