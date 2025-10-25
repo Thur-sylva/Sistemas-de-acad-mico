@@ -1,5 +1,3 @@
-
- 
 class Disciplina:
     def __init__(self, nome, codigo, carga_horaria, pre_requisitos=None):
         self.nome = nome

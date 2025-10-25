@@ -1,5 +1,5 @@
-from package.pessoa import Pessoa
-from package.aluno import Aluno
+from package.models.pessoa import Pessoa 
+from package.models.aluno import Aluno
 
 aluno1 = Aluno("João", "Engenharia de Software", 12345)
 aluno2 = Aluno("Maria", "Engenharia Eletrônica", 54321, especial=True)  # aluno especial

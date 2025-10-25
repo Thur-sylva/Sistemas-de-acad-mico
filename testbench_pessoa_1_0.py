@@ -1,4 +1,4 @@
-from package.pessoa import Pessoa 
+from package.models.pessoa import Pessoa  
 
 def workspace():
 

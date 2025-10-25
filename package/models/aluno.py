@@ -1,9 +1,9 @@
-from package.pessoa import Pessoa 
+from package.models.pessoa import Pessoa 
 
 class Aluno(Pessoa):
     def __init__(self, nome, curso, matricula, especial=False):
+        
         super().__init__(nome)
-
         self.set_matricula(matricula)
         self.set_curso(curso)
         self._disciplinas =[]

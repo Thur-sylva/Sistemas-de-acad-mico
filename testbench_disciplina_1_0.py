@@ -1,4 +1,4 @@
-from package.disciplina import Disciplina
+from package.models.disciplina import Disciplina
 
 # Criando disciplinas
 disc1 = Disciplina("Matemática", "MAT101", 60)

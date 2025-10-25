@@ -1,18 +1,27 @@
-from package.pessoa import Pessoa
-from package.professor import Professor
+from package.models.professor import Professor
+from package.models.aluno import Aluno
+from package.models.disciplina import Disciplina
+from package.models.turma import Turma
 
-p1 = Professor("Dr. Carlos", "Doutor")
-p2 = Professor("Profa. Ana", "Mestre")
+disc = Disciplina("Matemática", "MAT101", 60)
 
-print(p1)
-print(p2)
+prof = Professor("Dr. Silva", "Doutor")
 
-print("Nome do prof1:", p1.get_nome())
-print("Titulação do prof2:", p2._titulacao)  
+aluno1 = Aluno("Alice", "Engenharia", 1001)
+aluno2 = Aluno("Bob", "Engenharia", 1002, especial=True)
 
-p1.set_nome("Dr. Carlos Silva")
-p2.set_nome("Profa. Ana Souza")
+turma = Turma(disc, prof)
+prof.adicionar_turma(turma)  
 
-print("\nApós alteração dos nomes:")
-print(p1)
-print(p2)
+
+turma.adicionar_aluno(aluno1)
+turma.adicionar_aluno(aluno2)
+
+prof.lancar_nota(turma, aluno1, 8.5)
+prof.lancar_nota(turma, aluno2, 9.0)
+
+prof.lancar_frequencia(turma, aluno1, 90)
+prof.lancar_frequencia(turma, aluno2, 95)
+print("                                                 ")
+print(" Alunos da turma de Matemática ")
+turma.listar_alunos()

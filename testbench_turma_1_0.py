@@ -1,27 +1,28 @@
-from package.aluno import Aluno
-from package.professor import Professor
-from package.disciplina import Disciplina
-from package.turma import Turma
+from package.models.aluno import Aluno
+from package.models.professor import Professor
+from package.models.disciplina import Disciplina
+from package.models.turma import Turma
 
 
-prof = Professor("Dr. Carlos", "Doutor")
+disc = Disciplina("Física", "FIS101", 60)
+prof = Professor("Dra. Ana", "Mestre")
+turma = Turma(disc, prof, presencial=True, sala="101", horario="08:00-10:00")
 
-disc = Disciplina("Matemática", "MAT101", 60)
+aluno1 = Aluno("Carlos", "Engenharia", 2001)
+aluno2 = Aluno("Daniela", "Engenharia", 2002, especial=True)
 
-aluno1 = Aluno("João", "Engenharia de Software", 12345)
-aluno2 = Aluno("Maria", "Engenharia Eletrônica", 54321)
+print("Matriculando alunos...")
+turma.adicionar_aluno(aluno1)
+turma.adicionar_aluno(aluno2)
 
-turma = Turma(disciplina=disc, professor=prof, semestre="2025/2", capacidade=2, presencial=True, sala="101", horario="08:00-10:00")
+turma.lancar_notas(aluno1, 7.5)
+turma.lancar_notas(aluno2, 9.0)
 
+turma.lancar_frequencia(aluno1, 85)
+turma.lancar_frequencia(aluno2, 95)
+
+print("\nAlunos da turma de Física ")
+turma.listar_alunos()
+
+print("\nInformações da turma:")
 print(turma)
-
-print("\nMatriculando alunos:")
-print("João:", turma.adicionar_aluno(aluno1))
-print("Maria:", turma.adicionar_aluno(aluno2))
-
-aluno3 = Aluno("Pedro", "Engenharia de Software", 67890)
-print("Pedro:", turma.adicionar_aluno(aluno3))  
-
-print("\nAlunos matriculados na turma:")
-for aluno in turma.alunos:
-    print(aluno)
