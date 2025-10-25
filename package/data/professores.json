@@ -1,10 +1,22 @@
 [
     {
-        "nome": "joão",
+        "nome": "Rafaella",
         "titulacao": "mestre"
     },
     {
-        "nome": "Rafaella",
+        "nome": "Ana",
+        "titulacao": "Mestre"
+    },
+    {
+        "nome": "mel",
         "titulacao": "mestre"
+    },
+    {
+        "nome": "",
+        "titulacao": "0"
+    },
+    {
+        "nome": "AMARAL",
+        "titulacao": "DOUTOR"
     }
 ]

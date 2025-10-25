@@ -10,9 +10,7 @@ class DataRecord:
         try:
             with open(self.__filename, "r", encoding="utf-8") as f:
                 self.__models = json.load(f)
-        except FileNotFoundError:
-            self.__models = []
-        except json.JSONDecodeError:
+        except (FileNotFoundError, json.JSONDecodeError):
             self.__models = []
 
     def save(self):
@@ -28,4 +26,17 @@ class DataRecord:
 
     def clear(self):
         self.__models = []
+        self.save()
+
+    def remove(self, predicate):
+        
+        self.__models = [m for m in self.__models if not predicate(m)]
+        self.save()
+
+    def update(self, predicate, new_item):
+        """Atualiza item existente"""
+        for i, m in enumerate(self.__models):
+            if predicate(m):
+                self.__models[i] = new_item
+                break
         self.save()

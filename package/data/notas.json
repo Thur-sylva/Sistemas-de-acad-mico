@@ -1,0 +1,14 @@
+[
+    {
+        "matricula": "0",
+        "disciplina": "0",
+        "nota": 0.0,
+        "frequencia": 0.0
+    },
+    {
+        "matricula": "1234",
+        "disciplina": "666",
+        "nota": 10.0,
+        "frequencia": 100.0
+    }
+]

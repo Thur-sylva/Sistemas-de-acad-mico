@@ -1,14 +1,1 @@
-[
-    {
-        "nome": "Arthur Amaral",
-        "curso": "engenharia",
-        "matricula": 666,
-        "especial": false
-    },
-    {
-        "nome": "jorge",
-        "curso": "biologia ",
-        "matricula": 444,
-        "especial": true
-    }
-]
+[]
