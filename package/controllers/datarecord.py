@@ -34,7 +34,7 @@ class DataRecord:
         self.save()
 
     def update(self, predicate, new_item):
-        """Atualiza item existente"""
+      
         for i, m in enumerate(self.__models):
             if predicate(m):
                 self.__models[i] = new_item

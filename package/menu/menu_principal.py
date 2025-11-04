@@ -26,7 +26,7 @@ def menu_principal():
         if opcao == "1":
             menu_aluno(aluno_ctrl)
         elif opcao == "2":
-            menu_professor(prof_ctrl)  # Apenas 1 argumento
+            menu_professor(prof_ctrl) 
         elif opcao == "3":
             menu_disciplina(disc_ctrl)
         elif opcao == "4":

@@ -1,1 +1,17 @@
-[]
+[
+    {
+        "nome": "OO",
+        "codigo": "777",
+        "carga_horaria": 60
+    },
+    {
+        "nome": "Orientação a objetos",
+        "codigo": "888",
+        "carga_horaria": 60
+    },
+    {
+        "nome": "desenho industrial",
+        "codigo": "2020",
+        "carga_horaria": 60
+    }
+]

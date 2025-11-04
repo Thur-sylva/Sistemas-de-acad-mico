@@ -1,1 +1,40 @@
-[]
+[
+    {
+        "disciplina": "777",
+        "professor": "mel",
+        "presencial": true,
+        "sala": "10",
+        "horario": "12",
+        "alunos": [
+            {
+                "matricula": 1234,
+                "nome": "Arthur",
+                "nota": null,
+                "frequencia": null
+            }
+        ]
+    },
+    {
+        "disciplina": "888",
+        "professor": "Ronaldo",
+        "presencial": true,
+        "sala": "12",
+        "horario": "12",
+        "alunos": []
+    },
+    {
+        "disciplina": "2020",
+        "professor": "AMARAL",
+        "presencial": true,
+        "sala": "20",
+        "horario": "14",
+        "alunos": [
+            {
+                "matricula": 999,
+                "nome": "rafaella",
+                "nota": null,
+                "frequencia": null
+            }
+        ]
+    }
+]

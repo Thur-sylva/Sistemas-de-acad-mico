@@ -4,10 +4,6 @@
         "titulacao": "mestre"
     },
     {
-        "nome": "Ana",
-        "titulacao": "Mestre"
-    },
-    {
         "nome": "mel",
         "titulacao": "mestre"
     },
@@ -18,5 +14,17 @@
     {
         "nome": "AMARAL",
         "titulacao": "DOUTOR"
+    },
+    {
+        "nome": "mel",
+        "titulacao": "mestre"
+    },
+    {
+        "nome": "Ronaldo",
+        "titulacao": "mestre"
+    },
+    {
+        "nome": "Amaral",
+        "titulacao": "doutor"
     }
 ]

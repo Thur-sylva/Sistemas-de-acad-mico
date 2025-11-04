@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "nome": "Arthur Amaral",
+        "curso": "engenharias",
+        "matricula": 444,
+        "especial": false
+    },
+    {
+        "nome": "Luana",
+        "curso": "enfermagem",
+        "matricula": 333,
+        "especial": false
+    },
+    {
+        "nome": "rafaella",
+        "curso": "medicina",
+        "matricula": 999,
+        "especial": false
+    }
+]

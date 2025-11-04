@@ -10,5 +10,17 @@
         "disciplina": "666",
         "nota": 10.0,
         "frequencia": 100.0
+    },
+    {
+        "matricula": "1234",
+        "disciplina": "777",
+        "nota": 10.0,
+        "frequencia": 100.0
+    },
+    {
+        "matricula": "999",
+        "disciplina": "2020",
+        "nota": 10.0,
+        "frequencia": 100.0
     }
 ]

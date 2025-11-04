@@ -11,7 +11,7 @@ class NotaController:
                 r["nota"] = nota
                 r["frequencia"] = frequencia
                 self.data.save()
-                return f"✅ Nota e frequência atualizadas"
+                return f" Nota e frequência atualizadas"
         # Novo registro
         self.data.add({
             "matricula": matricula,
@@ -19,7 +19,7 @@ class NotaController:
             "nota": nota,
             "frequencia": frequencia
         })
-        return f"✅ Nota e frequência registradas"
+        return f" Nota e frequência registradas"
 
     def buscar_notas_aluno(self, matricula):
         return [r for r in self.data.all() if r["matricula"] == matricula]
